@@ -19,6 +19,55 @@
 
 A collection of AI-powered prompts designed to streamline software development workflows, optimized for the Windsurf development environment. Each prompt is crafted to work seamlessly with Windsurf's Cascade AI assistant, providing consistent guidance across different development phases.
 
+## ⚡ Essential Windsurf Tips
+
+### 🚀 Getting Started Right
+1. **First Time Setup**:
+   ```bash
+   # IMPORTANT: Always initialize Windsurf before starting!
+   windsurf init
+   ```
+   - Open Windsurf
+   - File > Open Folder
+   - Create/select your project folder
+   - Terminal > New Terminal
+   - Run `windsurf init`
+   - Then start chatting with Cascade
+
+2. **Optional Features to Consider**:
+   - Analytics tracking (opt-in for project insights)
+   - Real-time validation (configurable in settings)
+   - Chain prompt system:
+     * When enabled:
+       - Structured step-by-step workflows
+       - Automatic validation at each step
+       - Progress tracking
+       - Dependencies management
+       - Best practices enforcement
+     * When disabled:
+       - Basic conversation with Cascade
+       - Standard code assistance
+       - File editing capabilities
+       - Manual workflow management
+   
+   *All features can be configured in `.windsurf/config.json` after initialization*
+
+3. **Common Pitfalls to Avoid**:
+   - ❌ Don't start coding before running `windsurf init`
+   - ❌ Don't skip the initialization step
+   - ✅ Always check for `.windsurf` directory
+
+### 💡 Pro Tips
+- Use `Ctrl+Shift+P` for quick commands
+- Split terminal for multiple tasks
+- Enable project-specific settings
+- Utilize chain prompts for complex workflows
+
+### 🔧 Quick Troubleshooting
+- No enhanced features? Check for `.windsurf` directory
+- Features not working? Verify initialization
+- Need help? Ask Cascade about "windsurf features"
+
 ## Quick Start with Windsurf
 
 1. **Initialize Your Project**
