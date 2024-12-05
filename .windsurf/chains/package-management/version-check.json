@@ -1,0 +1,27 @@
+{
+    "name": "Package Version Management",
+    "description": "Automated package version checking and validation",
+    "steps": {
+        "version-check": {
+            "prompt": "prompts/package-management/version-check.md",
+            "output": "docs/package-analysis.md",
+            "features": {
+                "autoUpdate": true,
+                "securityScan": true,
+                "compatibilityCheck": true
+            },
+            "integrations": {
+                "npm": true,
+                "pip": true,
+                "maven": true
+            },
+            "validation": {
+                "required": true,
+                "checkpoints": ["versions", "security", "compatibility"]
+            }
+        }
+    },
+    "dependencies": {
+        "tech-stack": "complete"
+    }
+}

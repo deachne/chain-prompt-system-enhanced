@@ -1,0 +1,66 @@
+{
+    "commands": {
+        "chain": {
+            "start": {
+                "command": "/chain start",
+                "description": "Start a new development chain",
+                "args": ["chainType"],
+                "examples": [
+                    "/chain start web-app",
+                    "/chain start mobile-app"
+                ]
+            },
+            "status": {
+                "command": "/chain status",
+                "description": "Show current chain status",
+                "visualization": true
+            },
+            "next": {
+                "command": "/chain next",
+                "description": "Move to next step in chain",
+                "autoValidate": true
+            },
+            "validate": {
+                "command": "/chain validate",
+                "description": "Validate current step",
+                "showDetails": true
+            },
+            "monitor": {
+                "command": "/chain monitor",
+                "description": "Show package monitoring status",
+                "refreshRate": "5min"
+            }
+        },
+        "package": {
+            "check": {
+                "command": "/package check",
+                "description": "Check package versions",
+                "args": ["packageName"]
+            },
+            "update": {
+                "command": "/package update",
+                "description": "Update specified package",
+                "args": ["packageName", "version"]
+            },
+            "security": {
+                "command": "/package security",
+                "description": "Show security advisories",
+                "priority": "high"
+            }
+        }
+    },
+    "shortcuts": {
+        "ctrl+shift+c": "/chain status",
+        "ctrl+shift+n": "/chain next",
+        "ctrl+shift+v": "/chain validate"
+    },
+    "notifications": {
+        "enabled": true,
+        "channels": ["security", "updates", "validation"],
+        "priority": {
+            "security": "immediate",
+            "updates": "daily",
+            "validation": "immediate"
+        }
+    }
+}

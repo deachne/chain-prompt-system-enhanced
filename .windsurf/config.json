@@ -1,0 +1,35 @@
+{
+    "features": {
+        "packageManagement": {
+            "enabled": true,
+            "versionCheck": true,
+            "compatibilityMatrix": true,
+            "securityScan": true
+        },
+        "validation": {
+            "autoValidate": true,
+            "checkpoints": ["vision", "requirements", "tech-stack"],
+            "blockOnFailure": true,
+            "notifyOnWarning": true
+        },
+        "monitoring": {
+            "enabled": true,
+            "realTimeTracking": true,
+            "securityAlerts": true,
+            "updateNotifications": true,
+            "refreshInterval": 300
+        },
+        "windsurfIntegration": {
+            "commands": "commands/chain-commands.json",
+            "shortcuts": true,
+            "notifications": true,
+            "statusBar": true
+        }
+    },
+    "chains": {
+        "core": "chains/core.json",
+        "package-management": "chains/package-management/version-check.json",
+        "validation": "chains/validation/validation-chain.json",
+        "monitoring": "chains/monitoring/update-monitor.json"
+    }
+}

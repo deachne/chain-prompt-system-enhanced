@@ -1,0 +1,35 @@
+{
+    "name": "Chain Validation System",
+    "description": "Automated validation for development chain steps",
+    "steps": {
+        "vision-validation": {
+            "prompt": "prompts/validation/chain-validation.md",
+            "section": "Vision Statement Validation",
+            "required": ["project_vision.md"],
+            "output": "validation/vision-validation.json"
+        },
+        "requirements-validation": {
+            "prompt": "prompts/validation/chain-validation.md",
+            "section": "Requirements Validation",
+            "required": ["core_requirements.md"],
+            "output": "validation/requirements-validation.json"
+        },
+        "tech-stack-validation": {
+            "prompt": "prompts/validation/chain-validation.md",
+            "section": "Tech Stack Validation",
+            "required": ["tech_stack.md"],
+            "output": "validation/tech-stack-validation.json"
+        },
+        "architecture-validation": {
+            "prompt": "prompts/validation/chain-validation.md",
+            "section": "Architecture Validation",
+            "required": ["initial_architecture.md"],
+            "output": "validation/architecture-validation.json"
+        }
+    },
+    "validation": {
+        "autoValidate": true,
+        "blockOnFailure": true,
+        "notifyOnWarning": true
+    }
+}

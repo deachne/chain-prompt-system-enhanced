@@ -1,0 +1,104 @@
+{
+    "rules": {
+        "vision": {
+            "required_sections": [
+                "Project Purpose",
+                "Target Audience",
+                "Core Functionality",
+                "Success Criteria"
+            ],
+            "minimum_content_length": 100,
+            "keywords": [
+                "goals",
+                "objectives",
+                "requirements",
+                "metrics"
+            ]
+        },
+        "requirements": {
+            "categories": [
+                "Functional",
+                "Non-Functional",
+                "Technical",
+                "Security"
+            ],
+            "format": {
+                "id_pattern": "^REQ-\\d+$",
+                "priority_levels": ["High", "Medium", "Low"],
+                "status_values": ["Proposed", "Approved", "Implemented", "Verified"]
+            },
+            "dependencies": {
+                "require_parent": true,
+                "circular_check": true
+            }
+        },
+        "tech_stack": {
+            "required_categories": [
+                "Frontend",
+                "Backend",
+                "Database",
+                "DevOps",
+                "Testing"
+            ],
+            "version_format": "^\\d+\\.\\d+\\.\\d+$",
+            "compatibility_check": true,
+            "security_check": true,
+            "performance_impact": {
+                "check_enabled": true,
+                "metrics": ["load_time", "memory_usage", "cpu_usage"]
+            }
+        },
+        "architecture": {
+            "required_diagrams": [
+                "System Context",
+                "Container",
+                "Component"
+            ],
+            "documentation": {
+                "patterns": true,
+                "decisions": true,
+                "constraints": true
+            },
+            "quality_attributes": [
+                "Scalability",
+                "Reliability",
+                "Security",
+                "Maintainability"
+            ]
+        },
+        "code": {
+            "style": {
+                "naming_conventions": true,
+                "formatting": true,
+                "complexity_threshold": 10
+            },
+            "security": {
+                "input_validation": true,
+                "authentication": true,
+                "authorization": true,
+                "data_protection": true
+            },
+            "performance": {
+                "resource_usage": true,
+                "optimization": true,
+                "caching": true
+            }
+        }
+    },
+    "validation_levels": {
+        "strict": {
+            "require_all": true,
+            "allow_warnings": false
+        },
+        "normal": {
+            "require_all": false,
+            "allow_warnings": true,
+            "warning_threshold": 3
+        },
+        "relaxed": {
+            "require_all": false,
+            "allow_warnings": true,
+            "warning_threshold": 5
+        }
+    }
+}

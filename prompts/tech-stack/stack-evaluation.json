@@ -1,0 +1,162 @@
+{
+    "evaluation_criteria": {
+        "project_fit": {
+            "scale": "Small | Medium | Large",
+            "factors": [
+                "Project size",
+                "Team size",
+                "Time constraints",
+                "Budget constraints"
+            ]
+        },
+        "technical_metrics": {
+            "performance": {
+                "weight": 0.2,
+                "factors": [
+                    "Load time",
+                    "Response time",
+                    "Resource usage",
+                    "Scalability"
+                ]
+            },
+            "reliability": {
+                "weight": 0.2,
+                "factors": [
+                    "Uptime guarantees",
+                    "Error handling",
+                    "Data integrity",
+                    "Backup systems"
+                ]
+            },
+            "security": {
+                "weight": 0.2,
+                "factors": [
+                    "Authentication",
+                    "Authorization",
+                    "Data encryption",
+                    "Security updates"
+                ]
+            },
+            "maintainability": {
+                "weight": 0.2,
+                "factors": [
+                    "Code quality",
+                    "Documentation",
+                    "Community support",
+                    "Update frequency"
+                ]
+            },
+            "cost_efficiency": {
+                "weight": 0.2,
+                "factors": [
+                    "Licensing costs",
+                    "Hosting costs",
+                    "Development time",
+                    "Maintenance costs"
+                ]
+            }
+        },
+        "stack_combinations": {
+            "modern_fullstack": {
+                "frontend": ["Next.js", "Remix", "Nuxt"],
+                "backend": ["Serverless Functions", "Edge Functions"],
+                "database": ["Supabase", "Firebase", "PlanetScale"],
+                "devops": ["Vercel", "Netlify", "Railway"],
+                "testing": ["Vitest", "Playwright", "Cypress"],
+                "best_for": [
+                    "Rapid development",
+                    "Small to medium teams",
+                    "Modern web applications",
+                    "JAMstack architecture"
+                ]
+            },
+            "enterprise": {
+                "frontend": ["React", "Angular", "Vue.js"],
+                "backend": ["Java Spring", ".NET", "Node.js"],
+                "database": ["PostgreSQL", "Oracle", "SQL Server"],
+                "devops": ["AWS", "Azure", "GCP"],
+                "testing": ["Jest", "JUnit", "Selenium"],
+                "best_for": [
+                    "Large organizations",
+                    "Complex systems",
+                    "High security requirements",
+                    "Legacy system integration"
+                ]
+            },
+            "startup": {
+                "frontend": ["React", "Vue.js", "Svelte"],
+                "backend": ["Node.js", "Python", "Go"],
+                "database": ["MongoDB", "PostgreSQL", "Redis"],
+                "devops": ["Digital Ocean", "Heroku", "AWS"],
+                "testing": ["Jest", "Mocha", "Cypress"],
+                "best_for": [
+                    "Quick iteration",
+                    "MVP development",
+                    "Cost-effective scaling",
+                    "Small teams"
+                ]
+            }
+        },
+        "red_flags": {
+            "technical": [
+                "Deprecated technologies",
+                "Poor documentation",
+                "Small community",
+                "Infrequent updates",
+                "Known security issues",
+                "Poor performance metrics"
+            ],
+            "business": [
+                "High licensing costs",
+                "Vendor lock-in",
+                "Limited scalability",
+                "Poor support options",
+                "Complex migration paths"
+            ]
+        }
+    },
+    "decision_framework": {
+        "steps": [
+            {
+                "step": "Requirements Analysis",
+                "questions": [
+                    "What is the project scale?",
+                    "What are the performance requirements?",
+                    "What is the expected user load?",
+                    "What are the security requirements?",
+                    "What is the development timeline?",
+                    "What is the maintenance plan?"
+                ]
+            },
+            {
+                "step": "Stack Evaluation",
+                "criteria": [
+                    "Match with requirements",
+                    "Team expertise",
+                    "Community support",
+                    "Long-term viability",
+                    "Total cost of ownership"
+                ]
+            },
+            {
+                "step": "Risk Assessment",
+                "checks": [
+                    "Technology maturity",
+                    "Community health",
+                    "Migration difficulty",
+                    "Vendor stability",
+                    "Security track record"
+                ]
+            }
+        ],
+        "output": {
+            "recommendation": {
+                "stack": "Selected technology stack",
+                "rationale": "Detailed explanation of choices",
+                "alternatives": "Alternative options considered",
+                "risks": "Identified risks and mitigations",
+                "costs": "Expected costs and resources"
+            }
+        }
+    }
+}
