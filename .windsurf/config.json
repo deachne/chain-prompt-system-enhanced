@@ -31,5 +31,30 @@
         "package-management": "chains/package-management/version-check.json",
         "validation": "chains/validation/validation-chain.json",
         "monitoring": "chains/monitoring/update-monitor.json"
+    },
+    "analytics": {
+        "enabled": true,
+        "metrics": {
+            "chain_execution": {
+                "track_success": true,
+                "track_duration": true,
+                "track_errors": true,
+                "track_usage": true
+            },
+            "validation": {
+                "track_pass_rate": true,
+                "track_common_failures": true,
+                "track_fix_attempts": true
+            },
+            "performance": {
+                "track_response_time": true,
+                "track_resource_usage": true
+            }
+        },
+        "storage": {
+            "format": "json",
+            "retention_days": 30,
+            "path": ".windsurf/analytics/logs"
+        }
     }
 }
